@@ -156,7 +156,7 @@ return {
           end, -- Ensures it's displayed properly
         },
         lualine_b = {},
-        lualine_c = {},
+        lualine_c = { "searchcount", padding = { left = 0, right = 1 } },
         lualine_x = {
           {
             "diff",
@@ -187,6 +187,7 @@ return {
       opts.sections.lualine_y = {
         { "progress", separator = " ", padding = { left = 1, right = 0 } },
         { "location", padding = { left = 0, right = 1 } },
+        { "lsp_status", padding = { left = 0, right = 1 } },
       }
 
       -- Disable lualine_z section which shows the time
