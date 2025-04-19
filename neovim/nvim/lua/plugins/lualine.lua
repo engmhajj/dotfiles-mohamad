@@ -166,7 +166,6 @@ return {
               removed = icons.git.removed,
             },
           },
-          { "searchcount" },
         },
         lualine_y = {},
         lualine_z = {},
@@ -189,6 +188,7 @@ return {
       opts.sections.lualine_y = {
         { "progress", separator = " ", padding = { left = 1, right = 0 } },
         { "location", padding = { left = 0, right = 1 } },
+        { "searchcount", padding = { left = 0, right = 1 } },
       }
 
       -- Disable lualine_z section which shows the time
